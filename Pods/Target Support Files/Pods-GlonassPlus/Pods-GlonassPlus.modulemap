@@ -1,0 +1,6 @@
+framework module Pods_GlonassPlus {
+  umbrella header "Pods-GlonassPlus-umbrella.h"
+
+  export *
+  module * { export * }
+}

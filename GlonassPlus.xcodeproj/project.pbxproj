@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0439D92B25EA8F3C0025FBE9 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439D92A25EA8F3C0025FBE9 /* Matrix.swift */; };
+		0449833E25D3F26500240BD3 /* Ephemeris.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0449833D25D3F26500240BD3 /* Ephemeris.txt */; };
+		0453E7D525D18D7200CE7F0E /* MathModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453E7D425D18D7200CE7F0E /* MathModel.swift */; };
+		04CFF83E25CEC19400495317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFF83D25CEC19400495317 /* AppDelegate.swift */; };
+		04CFF84025CEC19400495317 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFF83F25CEC19400495317 /* SceneDelegate.swift */; };
+		04CFF84225CEC19400495317 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFF84125CEC19400495317 /* ViewController.swift */; };
+		04CFF84525CEC19400495317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CFF84325CEC19400495317 /* Main.storyboard */; };
+		04CFF84825CEC19400495317 /* GlonassPlus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04CFF84625CEC19400495317 /* GlonassPlus.xcdatamodeld */; };
+		04CFF84A25CEC19600495317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CFF84925CEC19600495317 /* Assets.xcassets */; };
+		04CFF84D25CEC19600495317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CFF84B25CEC19600495317 /* LaunchScreen.storyboard */; };
+		04E0FDA925E3DEE0001D8773 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0FDA825E3DEE0001D8773 /* Constants.swift */; };
+		04E0FDAC25E3DF08001D8773 /* ModelOfInstanceKA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0FDAB25E3DF08001D8773 /* ModelOfInstanceKA.swift */; };
+		04E0FDAF25E3DF23001D8773 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0FDAE25E3DF23001D8773 /* FileManager.swift */; };
+		981006BE2D6A892B20F965B2 /* Pods_GlonassPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D42789187DA75535DB21970 /* Pods_GlonassPlus.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0439D92A25EA8F3C0025FBE9 /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		0449833D25D3F26500240BD3 /* Ephemeris.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ephemeris.txt; sourceTree = "<group>"; };
+		0453E7D425D18D7200CE7F0E /* MathModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathModel.swift; sourceTree = "<group>"; };
+		04CFF83A25CEC19400495317 /* GlonassPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlonassPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CFF83D25CEC19400495317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04CFF83F25CEC19400495317 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04CFF84125CEC19400495317 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04CFF84425CEC19400495317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04CFF84725CEC19400495317 /* GlonassPlus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GlonassPlus.xcdatamodel; sourceTree = "<group>"; };
+		04CFF84925CEC19600495317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04CFF84C25CEC19600495317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04CFF84E25CEC19600495317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E0FDA825E3DEE0001D8773 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04E0FDAB25E3DF08001D8773 /* ModelOfInstanceKA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelOfInstanceKA.swift; sourceTree = "<group>"; };
+		04E0FDAE25E3DF23001D8773 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		08B203B9F2399E2146B679E0 /* Pods-GlonassPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlonassPlus.debug.xcconfig"; path = "Target Support Files/Pods-GlonassPlus/Pods-GlonassPlus.debug.xcconfig"; sourceTree = "<group>"; };
+		3D42789187DA75535DB21970 /* Pods_GlonassPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlonassPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C1D8805101B2A35443CE98 /* Pods-GlonassPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlonassPlus.release.xcconfig"; path = "Target Support Files/Pods-GlonassPlus/Pods-GlonassPlus.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04CFF83725CEC19300495317 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981006BE2D6A892B20F965B2 /* Pods_GlonassPlus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04CFF83125CEC19300495317 = {
+			isa = PBXGroup;
+			children = (
+				04CFF83C25CEC19400495317 /* GlonassPlus */,
+				04CFF83B25CEC19400495317 /* Products */,
+				1691704E0306C58EE318D404 /* Pods */,
+				B8EF1ADA909271DDBB9AD5B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04CFF83B25CEC19400495317 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04CFF83A25CEC19400495317 /* GlonassPlus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04CFF83C25CEC19400495317 /* GlonassPlus */ = {
+			isa = PBXGroup;
+			children = (
+				04CFF83D25CEC19400495317 /* AppDelegate.swift */,
+				04CFF83F25CEC19400495317 /* SceneDelegate.swift */,
+				04CFF84125CEC19400495317 /* ViewController.swift */,
+				0439D92A25EA8F3C0025FBE9 /* Matrix.swift */,
+				0453E7D425D18D7200CE7F0E /* MathModel.swift */,
+				04E0FDAE25E3DF23001D8773 /* FileManager.swift */,
+				04E0FDA825E3DEE0001D8773 /* Constants.swift */,
+				04E0FDAB25E3DF08001D8773 /* ModelOfInstanceKA.swift */,
+				04CFF84325CEC19400495317 /* Main.storyboard */,
+				04CFF84925CEC19600495317 /* Assets.xcassets */,
+				04CFF84B25CEC19600495317 /* LaunchScreen.storyboard */,
+				04CFF84E25CEC19600495317 /* Info.plist */,
+				04CFF84625CEC19400495317 /* GlonassPlus.xcdatamodeld */,
+				0449833D25D3F26500240BD3 /* Ephemeris.txt */,
+			);
+			path = GlonassPlus;
+			sourceTree = "<group>";
+		};
+		1691704E0306C58EE318D404 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08B203B9F2399E2146B679E0 /* Pods-GlonassPlus.debug.xcconfig */,
+				44C1D8805101B2A35443CE98 /* Pods-GlonassPlus.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B8EF1ADA909271DDBB9AD5B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D42789187DA75535DB21970 /* Pods_GlonassPlus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04CFF83925CEC19300495317 /* GlonassPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CFF85125CEC19600495317 /* Build configuration list for PBXNativeTarget "GlonassPlus" */;
+			buildPhases = (
+				A06EC553584EB96D14B17FF2 /* [CP] Check Pods Manifest.lock */,
+				04CFF83625CEC19300495317 /* Sources */,
+				04CFF83725CEC19300495317 /* Frameworks */,
+				04CFF83825CEC19300495317 /* Resources */,
+				FE35ED61F371E0454D6D0C36 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlonassPlus;
+			productName = GlonassPlus;
+			productReference = 04CFF83A25CEC19400495317 /* GlonassPlus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04CFF83225CEC19300495317 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = Mac;
+				TargetAttributes = {
+					04CFF83925CEC19300495317 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 04CFF83525CEC19300495317 /* Build configuration list for PBXProject "GlonassPlus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04CFF83125CEC19300495317;
+			productRefGroup = 04CFF83B25CEC19400495317 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04CFF83925CEC19300495317 /* GlonassPlus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04CFF83825CEC19300495317 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CFF84D25CEC19600495317 /* LaunchScreen.storyboard in Resources */,
+				0449833E25D3F26500240BD3 /* Ephemeris.txt in Resources */,
+				04CFF84A25CEC19600495317 /* Assets.xcassets in Resources */,
+				04CFF84525CEC19400495317 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A06EC553584EB96D14B17FF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GlonassPlus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE35ED61F371E0454D6D0C36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GlonassPlus/Pods-GlonassPlus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GlonassPlus/Pods-GlonassPlus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GlonassPlus/Pods-GlonassPlus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04CFF83625CEC19300495317 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CFF84225CEC19400495317 /* ViewController.swift in Sources */,
+				04CFF83E25CEC19400495317 /* AppDelegate.swift in Sources */,
+				0439D92B25EA8F3C0025FBE9 /* Matrix.swift in Sources */,
+				0453E7D525D18D7200CE7F0E /* MathModel.swift in Sources */,
+				04E0FDAC25E3DF08001D8773 /* ModelOfInstanceKA.swift in Sources */,
+				04CFF84025CEC19400495317 /* SceneDelegate.swift in Sources */,
+				04CFF84825CEC19400495317 /* GlonassPlus.xcdatamodeld in Sources */,
+				04E0FDA925E3DEE0001D8773 /* Constants.swift in Sources */,
+				04E0FDAF25E3DF23001D8773 /* FileManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04CFF84325CEC19400495317 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04CFF84425CEC19400495317 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04CFF84B25CEC19600495317 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04CFF84C25CEC19600495317 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04CFF84F25CEC19600495317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04CFF85025CEC19600495317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04CFF85225CEC19600495317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08B203B9F2399E2146B679E0 /* Pods-GlonassPlus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V29XY2H289;
+				INFOPLIST_FILE = GlonassPlus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.GlonassPlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		04CFF85325CEC19600495317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44C1D8805101B2A35443CE98 /* Pods-GlonassPlus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V29XY2H289;
+				INFOPLIST_FILE = GlonassPlus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.GlonassPlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04CFF83525CEC19300495317 /* Build configuration list for PBXProject "GlonassPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CFF84F25CEC19600495317 /* Debug */,
+				04CFF85025CEC19600495317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04CFF85125CEC19600495317 /* Build configuration list for PBXNativeTarget "GlonassPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CFF85225CEC19600495317 /* Debug */,
+				04CFF85325CEC19600495317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04CFF84625CEC19400495317 /* GlonassPlus.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04CFF84725CEC19400495317 /* GlonassPlus.xcdatamodel */,
+			);
+			currentVersion = 04CFF84725CEC19400495317 /* GlonassPlus.xcdatamodel */;
+			path = GlonassPlus.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 04CFF83225CEC19300495317 /* Project object */;
+}
