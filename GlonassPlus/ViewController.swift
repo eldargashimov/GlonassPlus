@@ -23,11 +23,12 @@ class ViewController: UIViewController {
         let parameters = readFrom(fileName: "Ephemeris")
         let koordinateCalc = CalculateKoordinates(ephemeris: parameters)
         
-        self.gf = koordinateCalc.calculateGFto(dLmbd: 60.0, dPhi: 60.0, dt: 300.0, gamma_mesta: 20.0)
+        self.gf = koordinateCalc.calculateGFto(dLmbd: 3.0, dPhi: 3.0, dt: 300.0, gamma_mesta: 10.0)
         
         var i = 0
         var j = 0
         for element in gf {
+            j = 0
             for el in element {
                 print("GF[\(i)][\(j)] = \(el)")
                 j += 1
@@ -81,60 +82,58 @@ class ViewController: UIViewController {
         
         var i = 0
         var j = 0
-        let views: [[UIView]] = Array.init(repeating: Array.init(repeating: UIView(), count: self.gf.count), count: self.gf[0].count)
-//        UIView.animate(withDuration: 5.0, animations: {
+        var views: [[UIView]] = []//Array.init(repeating: Array.init(repeating: UIView(), count: self.gf.count), count: self.gf[0].count)
+        for array in gf {
+            var views2: [UIView] = []
+            for _ in array {
+                let view = UIView()
+                views2.append(view)
+            }
+            views.append(views2)
+        }
+
         for element in self.gf {
-                j = 0
+            j = 0
                 for el in element {
-                    if el <= 1 {
-                        views[j][i].backgroundColor = .green
-                    } else if el <= 3 && el > 1 {
-                        views[j][i].backgroundColor = .yellow
+                    if el <= 1.9 {
+                        views[i][j].backgroundColor = .green
+                    } else if el <= 3 && el > 1.9 {
+                        views[i][j].backgroundColor = .yellow
                     } else {
-                        views[j][i].backgroundColor = .red
+                        views[i][j].backgroundColor = .red
                     }
                     
-                    if j == 0 && i == 0 {
-                        views[j][i].pin
-                            .left()
-                            .bottom()
-//                            .width(50)
-//                            .height(50)
+//                    if j == 0 && i == 0 {
+                        views[i][j].pin
+                            .top(self.worldView.bounds.height - self.worldView.bounds.height * CGFloat(i + 1) / CGFloat(gf.count))
+                            .left(self.worldView.bounds.width * CGFloat(j) / CGFloat(element.count))
                             .width(self.worldView.bounds.width / CGFloat(element.count))
                             .height(self.worldView.bounds.height / CGFloat(gf.count))
-                    } else if j == 0 && i != 0{
-                        views[j][i].pin
-                            .left()
-                            .bottom(to: views[j][i - 1].edge.top)
-//                            .width(50)
-//                            .height(50)
-                            .width(self.worldView.bounds.width / CGFloat(element.count))
-                            .height(self.worldView.bounds.height / CGFloat(gf.count))
-                    } else if j != 0 && i == 0 {
-                        
-                        views[j][i].pin
-                            .left(to: views[j - 1][i].edge.right)
-                            .bottom()
-//                            .width(50)
-//                            .height(50)
-                            .width(self.worldView.bounds.width / CGFloat(element.count))
-                            .height(self.worldView.bounds.height / CGFloat(gf.count))
-                    } else {
-                        views[j][i].pin
-                            .left(to: views[j - 1][i].edge.right)
-                            .bottom(to: views[j][i - 1].edge.top)
-//                            .width(50)
-//                            .height(50)
-                            .width(self.worldView.bounds.width / CGFloat(element.count))
-                            .height(self.worldView.bounds.height / CGFloat(gf.count))
-                    }
-                    self.worldView.addSubview(views[j][i])
+//                    } else if j == 0 && i != 0{
+//                        views[i][j].pin
+//                            .left()
+//                            .bottom(to: views[i - 1][j].edge.top)
+//                            .width(self.worldView.bounds.width / CGFloat(gf.count - 1))
+//                            .height(self.worldView.bounds.height / CGFloat(element.count - 1))
+//                    } else if j != 0 && i == 0 {
+//                        views[i][j].pin
+//                            .left(to: views[i][j - 1].edge.right)
+//                            .bottom()
+//                            .width(self.worldView.bounds.width / CGFloat(gf.count - 1))
+//                            .height(self.worldView.bounds.height / CGFloat(element.count - 1))
+//                    } else {
+//                        views[i][j].pin
+//                            .left(to: views[i][j - 1].edge.right)
+//                            .bottom(to: views[i - 1][j].edge.top)
+//                            .width(self.worldView.bounds.width / CGFloat(gf.count - 1))
+//                            .height(self.worldView.bounds.height / CGFloat(element.count - 1))
+//                    }
+                    self.worldView.addSubview(views[i][j])
                     self.worldView.setNeedsLayout()
                     self.worldView.layoutIfNeeded()
                     j += 1
                 }
                 i += 1
             }
-//        })
     }
 }

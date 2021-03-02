@@ -241,6 +241,7 @@ final class CalculateKoordinates {
                 kol_KA_point[j][i] = Int(floor(Double(kol_KA_point[j][i] / numShag)))
             }
         }
+        K_gp = trasnpose(matrix: K_gp)
         return K_gp
     }
 }

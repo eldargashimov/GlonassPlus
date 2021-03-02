@@ -62,3 +62,17 @@ func obratnayaMatrix (matrix: [[Double]]) -> [[Double]] {
     }
     return A_obr
 }
+
+func trasnpose(matrix: [[Double]]) -> [[Double]] {
+
+    var resultMatrix: [[Double]] = Array.init(repeating: Array.init(repeating: 0.0, count: matrix.count), count: matrix[0].count)
+
+    for i in 0..<matrix.count {
+        for j in 0..<matrix[0].count {
+            
+            resultMatrix[j][i] = matrix[i][j]
+        }
+    }
+    
+    return resultMatrix
+}
